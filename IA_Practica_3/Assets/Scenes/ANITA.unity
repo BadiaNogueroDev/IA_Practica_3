@@ -98,8 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: e811c1a78831674499d122f484ff6ed5,
-    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: e811c1a78831674499d122f484ff6ed5, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -867,7 +866,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53860486cf18188428b968e8fecc55f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behaviourTree: {fileID: 11400000, guid: 9e9d2d8bae61fa04d8576a0f5ed5462f, type: 2}
+  behaviourTree: {fileID: 11400000, guid: 102321c31942d2849bdf1efc4b4fccd6, type: 2}
   status: LIMBO
 --- !u!1 &869024204
 GameObject:

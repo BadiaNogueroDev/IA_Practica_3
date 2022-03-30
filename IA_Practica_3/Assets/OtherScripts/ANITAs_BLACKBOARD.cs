@@ -21,23 +21,23 @@ public class ANITAs_BLACKBOARD : Blackboard, IDialogSystem
 
     public string[] utterances =
     {
-        "unused utterance", // 0
-        "unused utterance",
-        "unused utterance",  // 2
-        "unused utterance", // 3
-        "unused utterance",
-        "unused utterance",//5
-        "unused utterance",//6
-        "unused utterance",
-        "unused utterance",//8
-        "unused utterance",//9
-        "It seems there's a customer",
+        "unused utterance", //0
+        "unused utterance", //1
+        "unused utterance", //2
+        "unused utterance", //3
+        "unused utterance", //4
+        "unused utterance", //5
+        "unused utterance", //6
+        "unused utterance", //7
+        "unused utterance", //8
+        "unused utterance", //9
+        "It seems there's a customer", //10
         "How can I help you dear customer?",//11
-        "Oh, I'm sorry we do not sell that", // 12
-        "Yes, well sell that!",
-        "Here you have!!! Enjoy it!", // 14
-        "What a pity!!! None left!",
-        "Waiting for a customer..." // 16
+        "Oh, I'm sorry we do not sell that", //12
+        "Yes, well sell that!", //13
+        "Here you have!!! Enjoy it!", //14
+        "What a pity!!! None left!", //15
+        "Waiting for a customer..." //16
     };
     
    
@@ -127,8 +127,6 @@ public class ANITAs_BLACKBOARD : Blackboard, IDialogSystem
         throw new System.NotImplementedException();
     }
 
-
-
     public string Ask(int index, bool utter)
     {
         if (partner==null)
@@ -156,7 +154,6 @@ public class ANITAs_BLACKBOARD : Blackboard, IDialogSystem
             partner.BeTold(utterances[index]);
             return true;
         }
-
     }
 
     public void BeTold(string sentence)
