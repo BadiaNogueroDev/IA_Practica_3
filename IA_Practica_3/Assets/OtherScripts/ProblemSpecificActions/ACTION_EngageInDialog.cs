@@ -15,6 +15,7 @@ public class ACTION_EngageInDialog : Action
     public override void OnInitialize()
     {
         thePartner = blackboard.Get<GameObject>(keyPartner);
+        Debug.Log("the partner = " + thePartner);
         if (thePartner!=null) partnerDialogSystem = thePartner.GetComponent<IDialogSystem>();
     }
 

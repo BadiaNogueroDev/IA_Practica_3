@@ -21,7 +21,6 @@ public class ACTION_AskEngaged : Action
 
     public override void OnInitialize()
     {
-
         duration = blackboard.Get<float>(keyDuration);
         utteranceIndex = blackboard.Get<int>(keyUtteranceIndex);
 

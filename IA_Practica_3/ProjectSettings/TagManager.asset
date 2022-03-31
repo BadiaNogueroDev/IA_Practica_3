@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - CUSTOMER
+  - STORE_ENTRANCE
+  - FRONTDESK
+  - EXIT_POINT
+  - EX_CUSTOMER
   layers:
   - Default
   - TransparentFX
