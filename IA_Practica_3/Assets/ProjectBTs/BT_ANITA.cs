@@ -4,7 +4,7 @@ using BTs;
 [CreateAssetMenu(fileName = "BT_ANITA", menuName = "Behaviour Trees/BT_ANITA", order = 1)]
 public class BT_ANITA : BehaviourTree
 {
-    Condition customerInStore = new CONDITION_CustomerInStore("theStoreEntrance");
+    Condition customerInStore = new CONDITION_CustomerInStore("customer");
     Condition alwaysTrue = new CONDITION_AlwaysTrue();
     Action hideBroom = new ACTION_Deactivate("theBroom");
     Action hideNotes = new ACTION_Deactivate("theNotes");
@@ -40,7 +40,7 @@ class BT_Sweep_Sing : BehaviourTree
 
 class BT_See_to_Customer : BehaviourTree
 {
-    Action engageInDialog = new ACTION_EngageInDialog("partner");
+    Action engageInDialog = new ACTION_EngageInDialog("customer");
     Action askEngagedCustomer = new ACTION_AskEngaged("11", "2", "answer");
 
     Selector selector;
