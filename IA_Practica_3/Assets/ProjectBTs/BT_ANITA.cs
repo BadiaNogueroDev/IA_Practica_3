@@ -53,7 +53,7 @@ class BT_See_to_Customer : BehaviourTree
 
     public override void OnConstruction()
     {
-        selector = new Selector(new Sequence(parseAnswer,engagedYesDialog), engagedNoDialog);
+        selector = new Selector(new Sequence(parseAnswer,engagedYesDialog, new BT_Sell_Product()), engagedNoDialog);
         root = new Sequence(engageInDialog, askEngagedCustomer, selector, disengageFromDialog);
     }
 }

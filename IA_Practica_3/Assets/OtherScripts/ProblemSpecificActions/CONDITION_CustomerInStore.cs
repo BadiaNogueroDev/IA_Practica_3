@@ -23,6 +23,7 @@ public class CONDITION_CustomerInStore : Condition
         }
         else
         {
+            Debug.Log("NO CUSTOMER");
             return false;
         }
     }
